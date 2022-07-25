@@ -1,0 +1,13 @@
+[package]
+name = "rust_object_store_demo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+object_store = { "path" = "/Users/alamb/Software/arrow-rs/object_store", features=["aws", "gcp", "azure"] }
+parquet = { "path" = "/Users/alamb/Software/arrow-rs/parquet" }
+tokio = { version = "1.18", features = ["sync", "macros", "parking_lot", "rt-multi-thread", "time"] }
+futures = "0.3"
+bytes = "1.0"
