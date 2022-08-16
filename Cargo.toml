@@ -6,8 +6,8 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-object_store = { "path" = "/Users/alamb/Software/arrow-rs/object_store", features=["aws", "gcp", "azure"] }
-parquet = { "path" = "/Users/alamb/Software/arrow-rs/parquet" }
+object_store = { version = "0.4.0", features=["aws","gcp", "azure"] }
 tokio = { version = "1.18", features = ["sync", "macros", "parking_lot", "rt-multi-thread", "time"] }
 futures = "0.3"
 bytes = "1.0"
+url = "2.2.2"
